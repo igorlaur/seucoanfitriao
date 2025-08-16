@@ -1,11 +1,6 @@
 "use client";
 import { useState } from "react";
 
-export const metadata = {
-  title: "Contato | Seu Coanfitrião",
-  description: "Fale com nosso time — WhatsApp e formulário de contato.",
-};
-
 export default function Contato() {
   const [status, setStatus] = useState<string | null>(null);
 

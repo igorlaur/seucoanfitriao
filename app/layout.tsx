@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,11 +45,11 @@ export default function RootLayout({
         {/* Header Moderno */}
         <header className="w-full border-b border-muted bg-white sticky top-0 z-30 shadow-sm">
           <div className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
-            <a href="/" className="font-title text-2xl md:text-3xl text-primary tracking-tight">Seu Coanfitrião</a>
+            <Link href="/" className="font-title text-2xl md:text-3xl text-primary tracking-tight">Seu Coanfitrião</Link>
             <nav className="flex gap-8 text-base md:text-lg font-medium">
-              <a href="/" className="text-primary hover:underline">Principal</a>
-              <a href="/blog" className="text-primary hover:underline">Guia do Anfitrião</a>
-              <a href="/contato" className="text-primary hover:underline">Fale Conosco</a>
+              <Link href="/" className="text-primary hover:underline">Principal</Link>
+              <Link href="/blog" className="text-primary hover:underline">Guia do Anfitrião</Link>
+              <Link href="/contato" className="text-primary hover:underline">Fale Conosco</Link>
             </nav>
           </div>
         </header>
