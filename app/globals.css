@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #fff;
+  --foreground: #222;
+  --primary: #FF5A5F; /* vermelho Airbnb */
+  --secondary: #00A699; /* verde Airbnb */
+  --accent: #FC642D; /* laranja Airbnb */
+  --muted: #f3f4f6; /* cinza claro */
+  --card: #fff;
+  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #18181b;
+    --foreground: #fff;
+    --card: #23272f;
+    --muted: #1e293b;
   }
 }
 
+html { scroll-behavior: smooth; }
 body {
-  background: var(--background);
+  background: #fff;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.7;
 }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.bg-muted { background-color: var(--muted); }
+.bg-card { background-color: var(--card); }
+.font-title { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.01em; }
+.shadow-card { box-shadow: 0 4px 24px 0 rgba(255,90,95,0.08); }
