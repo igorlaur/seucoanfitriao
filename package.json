@@ -3,25 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "set NEXT_DISABLE_TURBOPACK=1 && next dev",
+    "dev:turbopack": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "lucide-react": "^0.539.0",
+    "next": "^15.4.6",
+    "next-seo": "^6.8.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "resend": "^6.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
+    "@types/node": "^20.19.11",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19",
+    "eslint": "^9.33.0",
     "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5.9.2"
+  },
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "app/globals.css",
+    "baseColor": "slate",
+    "cssVariables": true
   }
 }
