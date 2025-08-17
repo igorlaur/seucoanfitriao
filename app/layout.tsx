@@ -20,6 +20,47 @@ export const metadata: Metadata = {
     shortcut: '/logo.svg',
     apple: '/logo.svg',
   },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://seucoanfitriao.com.br',
+    title: 'Seu Coanfitrião | Gestão de Airbnb na Zona Oeste de SP',
+    description: 'Empresa Superhost especializada em gestão de imóveis para Airbnb. Atendemos toda a Zona Oeste de São Paulo. Planos a partir de 10%.',
+    siteName: 'Seu Coanfitrião',
+    images: [
+      {
+        url: '/logo1.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Seu Coanfitrião - Gestão de Airbnb',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Seu Coanfitrião | Gestão de Airbnb na Zona Oeste de SP',
+    description: 'Empresa Superhost especializada em gestão de imóveis para Airbnb. Atendemos toda a Zona Oeste de São Paulo. Planos a partir de 10%.',
+    images: ['/logo1.svg'],
+  },
+  keywords: [
+    'gestão airbnb',
+    'airbnb zona oeste sp',
+    'hospedagem são paulo',
+    'superhost',
+    'aluguel temporada',
+    'butantã',
+    'pinheiros',
+    'vila madalena',
+    'perdizes',
+    'lapa'
+  ],
+  authors: [{ name: 'Seu Coanfitrião' }],
+  creator: 'Seu Coanfitrião',
+  publisher: 'Seu Coanfitrião',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://seucoanfitriao.com.br',
+  },
 };
 
 export default function RootLayout({
@@ -47,6 +88,43 @@ export default function RootLayout({
             `}</Script>
           </>
         ) : null}
+
+        {/* Schema Markup - LocalBusiness */}
+        <Script id="schema-local-business" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Seu Coanfitrião",
+              "description": "Empresa Superhost especializada em gestão de imóveis para Airbnb na Zona Oeste de São Paulo",
+              "url": "https://seucoanfitriao.com.br",
+              "logo": "https://seucoanfitriao.com.br/logo1.svg",
+              "image": "https://seucoanfitriao.com.br/logo1.svg",
+              "telephone": "+55 11 95228-6097",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "São Paulo",
+                "addressRegion": "SP",
+                "addressCountry": "BR",
+                "areaServed": "Zona Oeste de São Paulo"
+              },
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": -23.5505,
+                  "longitude": -46.6333
+                },
+                "geoRadius": "20000"
+              },
+              "sameAs": [
+                "https://wa.me/5511952286097"
+              ],
+              "priceRange": "$$",
+              "openingHours": "Mo-Su 08:00-22:00"
+            }
+          `}
+        </Script>
 
         {/* Header Moderno */}
         <header className="w-full border-b border-muted bg-white sticky top-0 z-30 shadow-sm">
