@@ -1,4 +1,6 @@
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: "Como decorar seu imóvel para cada tipo de bairro e público alvo de locação | Seu Coanfitrião",
   description: "Dicas de decoração estratégica para diferentes perfis de hóspedes e regiões."
 };

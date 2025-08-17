@@ -1,4 +1,6 @@
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: "Precificação inteligente: maximize sua renda | Seu Coanfitrião",
   description: "Como definir preços competitivos e atrair mais hóspedes."
 };

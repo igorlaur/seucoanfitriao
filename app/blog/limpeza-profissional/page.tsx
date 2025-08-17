@@ -1,4 +1,6 @@
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: "Limpeza profissional: o segredo das avaliações 5 estrelas | Seu Coanfitrião",
   description: "Como a limpeza impacta na experiência do hóspede e nas avaliações."
 };

@@ -1,4 +1,6 @@
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: "Checklist do anfitrião: tudo o que você precisa garantir | Seu Coanfitrião",
   description: "Organize sua rotina e evite imprevistos com um checklist prático."
 };
