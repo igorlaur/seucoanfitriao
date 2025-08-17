@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,7 +51,15 @@ export default function RootLayout({
         {/* Header Moderno */}
         <header className="w-full border-b border-muted bg-white sticky top-0 z-30 shadow-sm">
           <div className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
-            <Link href="/" className="font-title text-2xl md:text-3xl text-primary tracking-tight">Seu Coanfitrião</Link>
+            <Link href="/" className="flex items-center">
+              <Image 
+                src="/logo1.svg" 
+                alt="Seu Coanfitrião" 
+                width={180} 
+                height={40}
+                className="h-8 md:h-10 w-auto"
+              />
+            </Link>
             <nav className="flex gap-8 text-base md:text-lg font-medium">
               <Link href="/" className="text-primary hover:underline">Principal</Link>
               <Link href="/blog" className="text-primary hover:underline">Guia do Anfitrião</Link>
