@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Empresa Superhost especializada em gestão de imóveis para Airbnb. Atendemos toda a Zona Oeste de São Paulo. Planos a partir de 10%.",
   metadataBase: new URL("https://seucoanfitriao.com.br"),
+  icons: {
+    icon: '/logo.svg',
+    shortcut: '/logo.svg',
+    apple: '/logo.svg',
+  },
 };
 
 export default function RootLayout({
