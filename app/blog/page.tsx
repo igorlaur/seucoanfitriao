@@ -8,6 +8,11 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "consultoria-airbnb-sao-paulo",
+    title: "Consultoria Airbnb SP: Aumente sua Receita em 40%",
+    excerpt: "Descubra como nossa consultoria especializada pode otimizar seu imóvel e aumentar sua receita sem terceirizar a gestão. Casos de sucesso reais.",
+  },
+  {
     slug: "nova-lei-alugueis-2026",
     title: "Nova Lei de Aluguéis 2026: Multas de até 70% para Proprietários",
     excerpt: "⚠️ URGENTE: Nova legislação traz multas pesadas para quem não declarar aluguéis. Saiba como se proteger antes que seja tarde.",
@@ -21,6 +26,21 @@ const posts = [
     slug: "por-que-contratar-coanfitriao",
     title: "Por que Contratar um Coanfitrião Vale a Pena?",
     excerpt: "Descubra quando vale a pena contratar um coanfitrião profissional. ROI, benefícios e sinais de que você precisa de ajuda.",
+  },
+  {
+    slug: "automacao-airbnb",
+    title: "Automação para Airbnb: Como Automatizar sua Hospedagem",
+    excerpt: "Descubra como automatizar completamente sua operação Airbnb. Ferramentas, estratégias e tecnologias para máxima eficiência.",
+  },
+  {
+    slug: "como-ser-superhost-airbnb",
+    title: "Como se tornar Superhost no Airbnb: Guia Completo 2025",
+    excerpt: "Descubra os segredos para se tornar Superhost no Airbnb. Dicas práticas, requisitos e estratégias que realmente funcionam na Zona Oeste de SP.",
+  },
+  {
+    slug: "gestao-propriedades-airbnb-sp",
+    title: "Gestão de Propriedades Airbnb em São Paulo: Guia Completo",
+    excerpt: "Tudo sobre gestão profissional de propriedades Airbnb em SP. Estratégias, dicas e serviços para maximizar sua receita na capital paulista.",
   },
   {
     slug: "decoracao-por-bairro-publico",
