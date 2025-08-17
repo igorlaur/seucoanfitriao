@@ -8,9 +8,24 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "nova-lei-alugueis-2026",
+    title: "Nova Lei de Aluguéis 2026: Multas de até 70% para Proprietários",
+    excerpt: "⚠️ URGENTE: Nova legislação traz multas pesadas para quem não declarar aluguéis. Saiba como se proteger antes que seja tarde.",
+  },
+  {
+    slug: "erros-que-custam-dinheiro-airbnb",
+    title: "5 Erros que Fazem Anfitriões Perderem Dinheiro no Airbnb",
+    excerpt: "Descubra os 5 principais erros que anfitriões cometem e que custam até 40% da receita potencial. Evite esses erros comuns em São Paulo.",
+  },
+  {
+    slug: "por-que-contratar-coanfitriao",
+    title: "Por que Contratar um Coanfitrião Vale a Pena?",
+    excerpt: "Descubra quando vale a pena contratar um coanfitrião profissional. ROI, benefícios e sinais de que você precisa de ajuda.",
+  },
+  {
     slug: "decoracao-por-bairro-publico",
     title: "Como decorar seu imóvel para cada tipo de bairro e público alvo de locação",
-    excerpt: "Descubra como adaptar a decoração do seu imóvel para diferentes perfis de hóspedes e regiões. Somos especialistas e podemos sugerir as melhores mobílias para cada cômodo, aumentando o potencial de locação.",
+    excerpt: "Descubra como adaptar a decoração do seu imóvel para diferentes perfis de hóspedes e regiões. Podemos sugerir as melhores mobílias para cada cômodo, aumentando o potencial de locação.",
   },
   {
     slug: "precificacao-inteligente",

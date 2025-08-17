@@ -126,6 +126,66 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Schema Markup - Service */}
+        <Script id="schema-service" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Gestão de Airbnb São Paulo",
+              "description": "Serviços profissionais de coanfitrião para Airbnb em São Paulo com foco na Zona Oeste",
+              "provider": {
+                "@type": "Organization",
+                "name": "Seu Coanfitrião",
+                "url": "https://seucoanfitriao.com.br"
+              },
+              "areaServed": {
+                "@type": "Place",
+                "name": "São Paulo, SP"
+              },
+              "category": "Gestão de Propriedades",
+              "serviceType": "Coanfitrião Airbnb",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "BRL"
+              }
+            }
+          `}
+        </Script>
+
+        {/* Schema Markup - Organization */}
+        <Script id="schema-organization" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Seu Coanfitrião",
+              "url": "https://seucoanfitriao.com.br",
+              "logo": "https://seucoanfitriao.com.br/logo1.png",
+              "description": "Gestão profissional de propriedades Airbnb em São Paulo com foco em maximizar receita e satisfação dos hóspedes",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+55-11-95228-6097",
+                "contactType": "customer service",
+                "availableLanguage": "Portuguese"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Seu Coanfitrião"
+              },
+              "foundingDate": "2024",
+              "knowsAbout": [
+                "Gestão Airbnb",
+                "Hospedagem São Paulo",
+                "Coanfitrião",
+                "Revenue Management",
+                "Limpeza Profissional"
+              ]
+            }
+          `}
+        </Script>
+
         {/* Header Moderno */}
         <header className="w-full border-b border-muted bg-white sticky top-0 z-30 shadow-sm">
           <div className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
@@ -140,6 +200,7 @@ export default function RootLayout({
             </Link>
             <nav className="flex gap-8 text-base md:text-lg font-medium">
               <Link href="/" className="text-primary hover:underline">Principal</Link>
+              <Link href="/coanfitriao-sao-paulo" className="text-primary hover:underline">Coanfitrião SP</Link>
               <Link href="/blog" className="text-primary hover:underline">Guia do Anfitrião</Link>
               <a 
                 href={`https://wa.me/${process.env.NEXT_PUBLIC_WPP || "5511952286097"}?text=${encodeURIComponent("Olá! Gostaria de falar com a Seu Coanfitrião.")}`}

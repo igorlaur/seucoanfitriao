@@ -7,8 +7,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        crawlDelay: 1,
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        crawlDelay: 0,
       },
     ],
     sitemap: `${base}/sitemap.xml`,
+    host: base,
   };
 }
