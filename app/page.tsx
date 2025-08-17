@@ -36,7 +36,7 @@ export default function Home() {
             href={WPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-secondary transition focus:outline-none focus:ring-2 focus:ring-primary"
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-[#128C7E] transition focus:outline-none focus:ring-2 focus:ring-[#25D366]"
           >
             <Phone size={26} /> Fale Agora no WhatsApp
           </a>
@@ -84,10 +84,10 @@ export default function Home() {
         <h2 className="font-title text-3xl md:text-4xl text-primary mb-8 text-center">Depoimentos</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[{
-            nome: "Carlos S.",
+            nome: "Antonio L.",
             texto: "Profissionalismo impecável e retorno acima do esperado! Recomendo muito.",
           }, {
-            nome: "Juliana M.",
+            nome: "Neide G.",
             texto: "Sempre disponíveis e resolutivos. Meu imóvel nunca esteve tão bem cuidado.",
           }, {
             nome: "Roberto F.",
@@ -109,7 +109,7 @@ export default function Home() {
           href={WPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-primary transition focus:outline-none focus:ring-2 focus:ring-accent"
+          className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-[#128C7E] transition focus:outline-none focus:ring-2 focus:ring-[#25D366]"
         >
           <Phone size={26} /> Falar no WhatsApp
         </a>

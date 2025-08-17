@@ -42,7 +42,7 @@ export default function Contato() {
 
         <div className="rounded-lg border p-6">
           <h2 className="font-semibold">WhatsApp</h2>
-          <a href={wppUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 rounded-md bg-green-600 text-white px-4 py-2 text-sm font-medium hover:bg-green-700">Fale agora</a>
+          <a href={wppUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 rounded-md bg-[#25D366] text-white px-4 py-2 text-sm font-medium hover:bg-[#128C7E] transition-colors">Fale agora</a>
           <div className="mt-6 text-sm">
             <p>E-mail: contato@seucoanfitriao.com.br</p>
           </div>
