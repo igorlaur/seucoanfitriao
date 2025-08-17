@@ -19,9 +19,7 @@ export default function DecoracaoPorBairroPublico() {
       </ul>
   <h2 className="font-title text-xl text-primary mt-6 mb-2">Adapte para o bairro</h2>
   <p className="text-[#222] mb-4">Bairros centrais pedem praticidade e modernidade. Regiões residenciais valorizam conforto e segurança. Locais turísticos podem explorar decoração temática e regional.</p>
-  <h2 className="font-title text-xl text-primary mt-6 mb-2">Conte com nossa experiência</h2>
-  <p className="text-[#222] mb-4">Nossa equipe tem experiência em decoração estratégica para locação. Podemos sugerir as melhores mobílias para cada cômodo, potencializando seu imóvel para o público certo e aumentando sua rentabilidade.</p>
-  <p className="mt-6 text-base text-[#222]">Quer uma consultoria personalizada? Fale conosco e transforme seu imóvel!</p>
+  <p className="mt-6 text-base text-[#222]">Essas dicas podem ajudar você a decorar seu imóvel de forma estratégica, atraindo mais hóspedes e melhorando suas avaliações!</p>
     </main>
   );
 }
