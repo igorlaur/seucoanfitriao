@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Seu Coanfitrião',
     images: [
       {
-        url: '/logo1.svg',
+        url: '/logo1.png',
         width: 1200,
         height: 630,
         alt: 'Seu Coanfitrião - Gestão de Airbnb',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Seu Coanfitrião | Gestão de Airbnb na Zona Oeste de SP',
     description: 'Empresa Superhost especializada em gestão de imóveis para Airbnb. Atendemos toda a Zona Oeste de São Paulo. Planos a partir de 10%.',
-    images: ['/logo1.svg'],
+    images: ['/logo1.png'],
   },
   keywords: [
     'gestão airbnb',
@@ -98,8 +98,8 @@ export default function RootLayout({
               "name": "Seu Coanfitrião",
               "description": "Empresa Superhost especializada em gestão de imóveis para Airbnb na Zona Oeste de São Paulo",
               "url": "https://seucoanfitriao.com.br",
-              "logo": "https://seucoanfitriao.com.br/logo1.svg",
-              "image": "https://seucoanfitriao.com.br/logo1.svg",
+              "logo": "https://seucoanfitriao.com.br/logo1.png",
+              "image": "https://seucoanfitriao.com.br/logo1.png",
               "telephone": "+55 11 95228-6097",
               "address": {
                 "@type": "PostalAddress",
