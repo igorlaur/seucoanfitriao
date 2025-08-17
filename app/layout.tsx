@@ -54,7 +54,14 @@ export default function RootLayout({
             <nav className="flex gap-8 text-base md:text-lg font-medium">
               <Link href="/" className="text-primary hover:underline">Principal</Link>
               <Link href="/blog" className="text-primary hover:underline">Guia do Anfitrião</Link>
-              <Link href="/contato" className="text-primary hover:underline">Fale Conosco</Link>
+              <a 
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WPP || "5511952286097"}?text=${encodeURIComponent("Olá! Gostaria de falar com a Seu Coanfitrião.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Fale Conosco
+              </a>
             </nav>
           </div>
         </header>
