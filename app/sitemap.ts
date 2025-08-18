@@ -14,12 +14,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/nova-lei-alugueis-2026`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/erros-que-custam-dinheiro-airbnb`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/por-que-contratar-coanfitriao`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/automacao-airbnb`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/blog/como-ser-superhost-airbnb`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${base}/blog/gestao-propriedades-airbnb-sp`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/blog/limpeza-profissional`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/blog/decoracao-por-bairro-publico`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${base}/blog/precificacao-inteligente`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/blog/checklist-anfitriao`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
   ];
 }

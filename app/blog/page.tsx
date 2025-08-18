@@ -28,29 +28,14 @@ const posts = [
     excerpt: "Descubra quando vale a pena contratar um coanfitrião profissional. ROI, benefícios e sinais de que você precisa de ajuda.",
   },
   {
-    slug: "automacao-airbnb",
-    title: "Automação para Airbnb: Como Automatizar sua Hospedagem",
-    excerpt: "Descubra como automatizar completamente sua operação Airbnb. Ferramentas, estratégias e tecnologias para máxima eficiência.",
-  },
-  {
     slug: "como-ser-superhost-airbnb",
     title: "Como se tornar Superhost no Airbnb: Guia Completo 2025",
     excerpt: "Descubra os segredos para se tornar Superhost no Airbnb. Dicas práticas, requisitos e estratégias que realmente funcionam na Zona Oeste de SP.",
   },
   {
-    slug: "gestao-propriedades-airbnb-sp",
-    title: "Gestão de Propriedades Airbnb em São Paulo: Guia Completo",
-    excerpt: "Tudo sobre gestão profissional de propriedades Airbnb em SP. Estratégias, dicas e serviços para maximizar sua receita na capital paulista.",
-  },
-  {
     slug: "decoracao-por-bairro-publico",
     title: "Como decorar seu imóvel para cada tipo de bairro e público alvo de locação",
     excerpt: "Descubra como adaptar a decoração do seu imóvel para diferentes perfis de hóspedes e regiões. Podemos sugerir as melhores mobílias para cada cômodo, aumentando o potencial de locação.",
-  },
-  {
-    slug: "precificacao-inteligente",
-    title: "Precificação inteligente: maximize sua renda",
-    excerpt: "Saiba como definir preços competitivos e atrair mais hóspedes sem perder lucratividade.",
   },
   {
     slug: "limpeza-profissional",

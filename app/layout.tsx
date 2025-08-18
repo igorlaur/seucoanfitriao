@@ -205,7 +205,9 @@ export default function RootLayout({
                 className="h-8 md:h-10 w-auto"
               />
             </Link>
-            <nav className="flex gap-8 text-base md:text-lg font-medium">
+            
+            {/* Menu Desktop */}
+            <nav className="hidden md:flex gap-8 text-base md:text-lg font-medium">
               <Link href="/" className="text-primary hover:underline">Principal</Link>
               <Link href="/coanfitriao-sao-paulo" className="text-primary hover:underline">Coanfitrião SP</Link>
               <Link href="/blog" className="text-primary hover:underline">Guia do Anfitrião</Link>
@@ -218,8 +220,138 @@ export default function RootLayout({
                 Fale Conosco
               </a>
             </nav>
+
+            {/* Botão Hambúrguer Mobile */}
+            <button 
+              id="mobile-menu-button"
+              className="md:hidden p-2 text-primary focus:outline-none"
+              type="button"
+              aria-label="Abrir menu"
+            >
+              <svg 
+                className="w-6 h-6" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M4 6h16M4 12h16M4 18h16" 
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Menu Mobile Overlay */}
+          <div 
+            id="mobile-menu" 
+            className="md:hidden fixed inset-0 z-40 bg-black bg-opacity-50 hidden"
+          >
+            <div className="fixed right-0 top-0 h-full w-80 bg-white shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out">
+              <div className="flex justify-between items-center p-6 border-b">
+                <h2 className="text-lg font-semibold text-primary">Menu</h2>
+                <button 
+                  id="mobile-menu-close"
+                  className="p-2 text-primary focus:outline-none"
+                  type="button"
+                  aria-label="Fechar menu"
+                >
+                  <svg 
+                    className="w-6 h-6" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M6 18L18 6M6 6l12 12" 
+                    />
+                  </svg>
+                </button>
+              </div>
+              <nav className="flex flex-col p-6 space-y-6">
+                <Link 
+                  href="/" 
+                  className="text-lg text-primary hover:text-blue-700 border-b border-gray-100 pb-4"
+                >
+                  Principal
+                </Link>
+                <Link 
+                  href="/coanfitriao-sao-paulo" 
+                  className="text-lg text-primary hover:text-blue-700 border-b border-gray-100 pb-4"
+                >
+                  Coanfitrião SP
+                </Link>
+                <Link 
+                  href="/blog" 
+                  className="text-lg text-primary hover:text-blue-700 border-b border-gray-100 pb-4"
+                >
+                  Guia do Anfitrião
+                </Link>
+                <a 
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WPP || "5511952286097"}?text=${encodeURIComponent("Olá! Gostaria de falar com a Seu Coanfitrião.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg text-primary hover:text-blue-700 border-b border-gray-100 pb-4"
+                >
+                  Fale Conosco
+                </a>
+              </nav>
+            </div>
           </div>
         </header>
+
+        {/* Script para Menu Mobile */}
+        <Script id="mobile-menu-script" strategy="afterInteractive">
+          {`
+            document.addEventListener('DOMContentLoaded', function() {
+              const menuButton = document.getElementById('mobile-menu-button');
+              const mobileMenu = document.getElementById('mobile-menu');
+              const closeButton = document.getElementById('mobile-menu-close');
+              const menuPanel = mobileMenu?.querySelector('div');
+
+              function openMenu() {
+                if (mobileMenu && menuPanel) {
+                  mobileMenu.classList.remove('hidden');
+                  setTimeout(() => {
+                    menuPanel.classList.remove('translate-x-full');
+                  }, 10);
+                  document.body.style.overflow = 'hidden';
+                }
+              }
+
+              function closeMenu() {
+                if (mobileMenu && menuPanel) {
+                  menuPanel.classList.add('translate-x-full');
+                  setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                  }, 300);
+                }
+              }
+
+              menuButton?.addEventListener('click', openMenu);
+              closeButton?.addEventListener('click', closeMenu);
+              
+              // Fechar ao clicar no overlay
+              mobileMenu?.addEventListener('click', function(e) {
+                if (e.target === mobileMenu) {
+                  closeMenu();
+                }
+              });
+
+              // Fechar ao clicar nos links
+              const menuLinks = mobileMenu?.querySelectorAll('a, [href]');
+              menuLinks?.forEach(link => {
+                link.addEventListener('click', closeMenu);
+              });
+            });
+          `}
+        </Script>
 
         <main className="min-h-[70vh]">{children}</main>
 
