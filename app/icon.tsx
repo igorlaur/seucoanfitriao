@@ -1,20 +1,35 @@
-// Rota de ícone - usando SVG personalizado
+import { ImageResponse } from 'next/og'
+ 
+// Rota de ícone
 export const size = {
   width: 32,
   height: 32,
 }
-export const contentType = 'image/svg+xml'
+export const contentType = 'image/png'
  
-// Função que retorna o SVG do logofav
+// Função que retorna o favicon
 export default function Icon() {
-  return new Response(
-    `<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <image href="/logofav.svg" width="32" height="32"/>
-    </svg>`,
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          fontSize: 24,
+          background: '#1e40af',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'white',
+          fontWeight: 'bold',
+          fontFamily: 'Inter',
+        }}
+      >
+        SC
+      </div>
+    ),
     {
-      headers: {
-        'Content-Type': 'image/svg+xml',
-      },
+      ...size,
     }
   )
 }
