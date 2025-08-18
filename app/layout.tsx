@@ -17,15 +17,9 @@ export const metadata: Metadata = {
     "Empresa Superhost especializada em gestão de imóveis para Airbnb. Atendemos toda a Zona Oeste de São Paulo. Planos a partir de 10%.",
   metadataBase: new URL("https://seucoanfitriao.com.br"),
   icons: {
-    icon: [
-      { url: '/logo1.png', sizes: '16x16', type: 'image/png' },
-      { url: '/logo1.png', sizes: '32x32', type: 'image/png' },
-      { url: '/logo1.png', sizes: '192x192', type: 'image/png' }
-    ],
-    shortcut: '/logo1.png',
-    apple: [
-      { url: '/logo1.png', sizes: '180x180', type: 'image/png' }
-    ],
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   openGraph: {
     type: 'website',
