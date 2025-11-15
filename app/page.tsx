@@ -104,7 +104,7 @@ export default function Home() {
       {/* CTA Final */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16 flex flex-col items-center justify-center gap-6 bg-muted rounded-xl shadow-card mb-12">
         <h2 className="font-title text-2xl md:text-3xl text-primary text-center">Receba uma proposta personalizada</h2>
-        <p className="text-base text-foreground/80 text-center max-w-xl">Conte-nos sobre o seu imóvel e objetivos. Retornamos em menos de 1 hora.</p>
+        <p className="text-base text-foreground/80 text-center max-w-xl">Conte-nos sobre o seu imóvel e objetivos. Retornamos em até 24h.</p>
         <a
           href={WPP_URL}
           target="_blank"

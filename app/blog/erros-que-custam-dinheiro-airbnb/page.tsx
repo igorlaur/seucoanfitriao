@@ -206,7 +206,7 @@ export default function ErrosAirbnb() {
 
             <h3 className="font-title text-lg text-gray-800 mb-3">⏰ Benchmarks de resposta em SP:</h3>
             <ul className="list-disc pl-6 mb-4 text-gray-700">
-              <li>Primeira resposta: máximo 1 hora</li>
+              <li>Primeira resposta: máximo 24h</li>
               <li>Taxa de resposta: mínimo 95%</li>
               <li>Mensagens personalizadas (não genéricas)</li>
               <li>Informações específicas de São Paulo (transporte, segurança)</li>

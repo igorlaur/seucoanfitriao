@@ -26,7 +26,7 @@ export default function Contato() {
               💬 Fale Direto no WhatsApp
             </h2>
             <p className="text-green-50 mb-6 text-lg">
-              Resposta em até 1 hora! Nossa equipe está online para atender você.
+              Resposta em até 24h! Nossa equipe está online para atender você.
             </p>
             <a 
               href={wppUrl} 
@@ -92,19 +92,19 @@ export default function Contato() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span>Análise gratuita do seu imóvel</span>
+                  <span className="text-gray-900">Análise gratuita do seu imóvel</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span>Projeção personalizada de receita</span>
+                  <span className="text-gray-900">Projeção personalizada de receita</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span>Consultoria inicial sem compromisso</span>
+                  <span className="text-gray-900">Consultoria inicial sem compromisso</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span>Proposta comercial transparente</span>
+                  <span className="text-gray-900">Proposta comercial transparente</span>
                 </li>
               </ul>
             </div>

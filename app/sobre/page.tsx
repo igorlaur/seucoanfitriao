@@ -48,7 +48,7 @@ export default function Sobre() {
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
               <Clock className="w-6 h-6 text-blue-600" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">&lt; 1h</h3>
+            <h3 className="text-2xl font-bold text-gray-900">&lt; 24h</h3>
             <p className="text-gray-600">Tempo médio de resposta</p>
           </div>
           
